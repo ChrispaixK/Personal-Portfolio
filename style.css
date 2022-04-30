@@ -36,7 +36,6 @@ h1 {
 }
 
 #projects {
-    height: 100vh;
     padding-top: 100px;
     display: flex;
     justify-content: space-evenly;
