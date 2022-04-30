@@ -1,14 +1,111 @@
-@media screen and (max-width:500px) {
-    body {
-        background-color: red;
-    }
+nav {
+    background-color: thistle;
+    width: 100vw;
+    height: 50px;
+    padding-top: 20px;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
 }
 
 #welcome-section {
+    margin-top: 100px;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 200;
+    padding-bottom: 50px;
+    color: thistle;
 }
 
 #navbar {
     top: 0;
+    left: 0;
+    right: 0;
     position: fixed;
+}
+
+#projects {
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#projects img {
+    width: 250px;
+    height: 250px;
+}
+
+.project-tile {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tile a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    background-color: thistle;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+#get-in-touch {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: thistle;
+}
+
+#get-in-touch a {
+    color: white;
+    font-size: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0 10px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: thistle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        text-align: center;
+    }
+
+    .project-tile {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width:739px) {
+    .project-tile {
+        margin: 0 20px;
+    }
 }
